@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Route Finder</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Smart Route Finder</h1>
+    <p>Click on the map to select start and end points.</p>
+
+    <div id="map"></div>
+
+    <div id="info">
+        <div class="info-row">
+            <div class="info-item">
+                <span class="label">Starting Point:</span>
+                <span id="start-node" class="value">Not Selected Yet</span>
+            </div>
+            <div class="info-item">
+                <span class="label">Ending Point:</span>
+                <span id="end-node" class="value">Not Selected Yet</span>
+            </div>
+        </div>
+        <div class="info-row">
+            <div class="info-item">
+                <span class="label">Shortest Distance:</span>
+                <span id="distance" class="value">--</span> km
+            </div>
+            <div class="info-item">
+                <span class="label">Estimated Travel Time:</span>
+                <span id="travel-time" class="value">--</span> hour
+            </div>
+        </div>
+        <div class="info-row-full">
+            <span class="label">Route Followed:</span>
+            <span id="path-sequence" class="value">--</span>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <script src="dijkstra.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+{
+    "nodes": ["Istanbul", "Ankara", "Izmir", "Antalya", "Bursa", "Adana", "Samsun", "Trabzon", "Diyarbakir"],
+    "edges": {
+      "Istanbul": [
+          {"node": "Ankara", "weight": 450, "type": "road"},
+          {"node": "Izmir", "weight": 570, "type": "road"},
+          {"node": "Bursa", "weight": 150, "type": "road"},
+          {"node": "Antalya", "weight": 700, "type": "road"},
+          {"node": "Adana", "weight": 940, "type": "road"}
+      ],
+      "Ankara": [
+          {"node": "Istanbul", "weight": 450, "type": "road"},
+          {"node": "Izmir", "weight": 590, "type": "road"},
+          {"node": "Antalya", "weight": 500, "type": "road"},
+          {"node": "Adana", "weight": 480, "type": "road"},
+          {"node": "Samsun", "weight": 400, "type": "road"},
+          {"node": "Diyarbakir", "weight": 900, "type": "road"}
+      ],
+      "Izmir": [
+          {"node": "Istanbul", "weight": 570, "type": "road"},
+          {"node": "Ankara", "weight": 590, "type": "road"},
+          {"node": "Antalya", "weight": 460, "type": "road"},
+          {"node": "Bursa", "weight": 400, "type": "road"}
+      ],
+      "Antalya": [
+          {"node": "Ankara", "weight": 500, "type": "road"},
+          {"node": "Izmir", "weight": 460, "type": "road"},
+          {"node": "Bursa", "weight": 547, "type": "road"},
+          {"node": "Adana", "weight": 550, "type": "road"}
+      ],
+      "Bursa": [
+          {"node": "Istanbul", "weight": 150, "type": "road"},
+          {"node": "Izmir", "weight": 400, "type": "road"},
+          {"node": "Antalya", "weight": 547, "type": "road"}
+      ],
+      "Adana": [
+          {"node": "Ankara", "weight": 480, "type": "road"},
+          {"node": "Antalya", "weight": 550, "type": "road"},
+          {"node": "Diyarbakir", "weight": 350, "type": "road"}
+      ],
+      "Samsun": [
+          {"node": "Ankara", "weight": 400, "type": "road"},
+          {"node": "Trabzon", "weight": 330, "type": "road"}
+      ],
+       "Trabzon": [
+          {"node": "Samsun", "weight": 330, "type": "road"}
+      ],
+       "Diyarbakir": [
+          {"node": "Ankara", "weight": 900, "type": "road"},
+          {"node": "Adana", "weight": 350, "type": "road"}
+      ]
+    },
+    "coordinates": {
+      "Istanbul": [41.0082, 28.9784],
+      "Ankara": [39.9334, 32.8597],
+      "Izmir": [38.4237, 27.1428],
+      "Antalya": [36.8969, 30.7133],
+      "Bursa": [40.1885, 29.0610],
+      "Adana": [37.0000, 35.3213],
+      "Samsun": [41.2793, 36.3361],
+      "Trabzon": [41.0050, 39.7269],
+      "Diyarbakir": [37.9144, 40.2341]
+    }
+  }
